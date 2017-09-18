@@ -215,8 +215,8 @@ class GameACLSTMNetwork(GameACNetwork):
       self.v = tf.reshape( v_, [-1] )
 
       scope.reuse_variables()
-      self.W_lstm = tf.get_variable("basic_lstm_cell/weights")
-      self.b_lstm = tf.get_variable("basic_lstm_cell/biases")
+      self.W_lstm = tf.get_variable("basic_lstm_cell/kernel")
+      self.b_lstm = tf.get_variable("basic_lstm_cell/bias")
 
       self.reset_state()
       
