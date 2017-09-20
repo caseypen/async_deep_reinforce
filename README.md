@@ -24,11 +24,12 @@ https://github.com/miyosuda/async_deep_reinforce/issues/1
 First we need to build multi thread ready version of Arcade Learning Enviroment.
 I made some modification to it to run it on multi thread enviroment.
 
-    $ git clone https://github.com/miyosuda/Arcade-Learning-Environment.git
+    $ install dependency: sudo apt-get install libsdl1.2-dev
+    $ git clone https://github.com/miyosuda/Arcade-Learning-Environment.git
     $ cd Arcade-Learning-Environment
     $ cmake -DUSE_SDL=ON -DUSE_RLGLUE=OFF -DBUILD_EXAMPLES=OFF .
     $ make -j 4
-	
+
     $ pip install .
 
 I recommend to install it on VirtualEnv environment.
